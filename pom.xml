@@ -1,143 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.prowo</groupId>
     <artifactId>drools-demo</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>drools-demo Maven Webapp</name>
+    <modules>
+        <module>dynamic-template-demo</module>
+    </modules>
+    <name>drools-demo</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <!-- drools 规则引擎 版本 -->
-        <drools.version>6.4.0.Final</drools.version>
-        <spring.version>4.3.6.RELEASE</spring.version>
-    </properties>
-
-    <dependencies>
-        <!-- start drools 最少引用-->
-        <!-- drools======1-->
-        <!--<dependency>-->
-        <!--<groupId>org.drools</groupId>-->
-        <!--<artifactId>drools-core</artifactId>-->
-        <!--<version>${drools.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.kie</groupId>-->
-        <!--<artifactId>kie-spring</artifactId>-->
-        <!--<version>${drools.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- drools======2-->
-        <!--<dependency>-->
-        <!--<groupId>org.drools</groupId>-->
-        <!--<artifactId>drools-core</artifactId>-->
-        <!--<version>5.4.0.Final</version>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-spring</artifactId>
-            <version>5.4.0.Final</version>
-        </dependency>
-        <!--<dependency>-->
-        <!--<groupId>drools</groupId>-->
-        <!--<artifactId>drools-all-jdk5</artifactId>-->
-        <!--<version>2.5-final</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>drools</groupId>-->
-        <!--<artifactId>drools-spring-examples</artifactId>-->
-        <!--<version>2.5-beta-1</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.drools</groupId>-->
-        <!--<artifactId>drools-jsr94</artifactId>-->
-        <!--<version>5.4.0.Final</version>-->
-        <!--</dependency>-->
-
-        <!-- drools======3-->
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-core</artifactId>
-            <version>6.4.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-compiler</artifactId>
-            <version>6.4.0.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>knowledge-api</artifactId>
-            <version>6.4.0.Final</version>
-        </dependency>
-        <!-- end drools -->
-        <!-- 添加Spring-core包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- 添加spring-context包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- 添加spring-tx包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- 添加spring-jdbc包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <!-- 为了方便进行单元测试，添加spring-test包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <finalName>drools-demo</finalName>
-        <testResources>
-            <testResource>
-                <directory>
-                    ${project.basedir}/src/main/resources
-                </directory>
-            </testResource>
-        </testResources>
-    </build>
 </project>

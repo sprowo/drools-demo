@@ -1,8 +1,0 @@
-package rules.bey;
-
-rule hello
-    when
-        eval(true)
-    then
-        System.out.println("hello,,...........");
-end
