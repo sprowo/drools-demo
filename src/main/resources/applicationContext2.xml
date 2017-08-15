@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:drools-spring="http://drools.org/schema/drools-spring"
+       xsi:schemaLocation="http://drools.org/schema/drools-spring http://drools.org/schema/drools-spring.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <drools-spring:kbase id="kbase">
+        <drools-spring:resources><!-- type 表示 规则引擎是的引入类型，source 表示 被引入规则引擎的文件所在位置  -->
+            <drools-spring:resource type="DRL" source="/Users/prowo/Documents/githubRepo/drools-demo/config/person.drl"/>
+        </drools-spring:resources>
+    </drools-spring:kbase>
+
+    <drools-spring:ksession id="ksession" type="stateful" kbase="kbase"/>
+    <!-- 通过Spring 注入PersonDrools -->
+    <bean id="personDrools" class="com.prowo.drools.PersonDrools">
+        <!-- 通过PersonDrools 将kession kbase 注入 -->
+        <property name="ksession" ref="ksession"/>
+        <property name="kbase" ref="kbase"/>
+    </bean>
+
+</beans>
