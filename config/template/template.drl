@@ -1,0 +1,6 @@
+rule hello
+    when
+        eval(true)
+    then
+        System.err.println("initxxxxxxxxxxxxxxxxxxxxx");
+end
