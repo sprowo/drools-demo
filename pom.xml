@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dynamic-template-demo</module>
+        <module>dynamic-string-demo</module>
     </modules>
     <name>drools-demo</name>
     <url>http://maven.apache.org</url>

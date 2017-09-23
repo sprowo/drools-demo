@@ -1,0 +1,30 @@
+package com.goSmarter.drools.banking   //是必添项，但名称不做要求，为统一方便管理，与其位置路径一致。
+import com.prowo.Student     //是必添项 ，引用的实体类
+
+rule "s1"
+    salience 11
+    when
+        $p : Student(age > 20);
+    then
+        $p.setDesc("傻逼20");
+        retract($p);
+end
+
+rule "s2"
+    salience 12
+    when
+        $p : Student(age > 30);
+    then
+        $p.setDesc("傻逼30");
+        retract($p);
+end
+
+rule "s3"
+    salience 13
+    when
+        $p : Student(age > 50);
+    then
+        $p.setDesc("傻逼50");
+        retract($p);
+end
+
