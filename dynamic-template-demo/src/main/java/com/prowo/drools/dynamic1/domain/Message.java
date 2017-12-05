@@ -36,4 +36,5 @@ public class Message implements Serializable {
                 ", status=" + status +
                 '}';
     }
+
 }
