@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
         <module name="dynamic-string-demo" />
         <module name="dynamic-template-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="algorithm" target="1.5" />
       <module name="drools-demo" target="1.5" />
       <module name="dynamic-string-demo" target="1.7" />
       <module name="dynamic-template-demo" target="1.5" />
