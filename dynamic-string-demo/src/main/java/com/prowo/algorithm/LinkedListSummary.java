@@ -1,6 +1,15 @@
 package com.prowo.algorithm;
 
 /**
+ * 1. 反正链表
+ * 2. 计算链表长度
+ * 3. 获取中间节点
+ * 4. 获取倒数第k个节点
+ * 5. 从尾到头打印链表
+ * 6. 判断链表是否有环
+ * 7. 合并有序链表
+ * 8. 两个链表相交的第一个节点
+ * 9. 进入环的第一个节点
  * @author prowo
  * @date 2017/12/9
  */
@@ -326,7 +335,7 @@ public class LinkedListSummary {
         return reHead;
     }
 
-    public static class Node {
+    private static class Node {
         int value;
         Node next;
 
