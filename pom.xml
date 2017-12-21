@@ -9,7 +9,6 @@
     <modules>
         <module>dynamic-template-demo</module>
         <module>dynamic-string-demo</module>
-        <module>algorithm</module>
     </modules>
     <name>drools-demo</name>
     <url>http://maven.apache.org</url>
